@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    #000,
+    #000 10px,
+    #111 10px,
+    #111 20px
+  );
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#game {
+  width: 95%;
+  max-width: 420px;
+  background: black;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px red;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Rubik Glitch", cursive;
+  font-size: 32px;
+  color: #ff004c;
+}
+
+#status {
+  font-family: "Comic Neue", cursive;
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-family: "Comic Neue", cursive;
+}
+
+#doNothing {
+  background: #ff004c;
+  color: white;
+}
+
+#chaosBtn {
+  background: orange;
+}
+
+#cryBtn {
+  background: cyan;
+}
+
+#score {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#log {
+  margin-top: 15px;
+  font-size: 12px;
+  max-height: 140px;
+  overflow-y: auto;
+  color: #aaa;
+}
+
+/* Responsivo maior */
+@media (min-width: 768px) {
+  #game {
+    max-width: 520px;
+  }
+}
+
